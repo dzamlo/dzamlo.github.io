@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-top: 1em;
+        max-width: 1vh;
+      }
+      td, th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      tr.location:hover {
+        background-color: rgb(0, 130, 250);
+      }
+
+      @keyframes blink {
+        0% {opacity: 0;}
+        50% {opacity: 1;}
+        100% {opacity: 0;}
+      }
+      .loading-animation {
+         animation-name: blink;
+         animation-duration: 3s;
+         animation-iteration-count: infinite;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+  
+<link rel="preload" href="/meteo/weather-history-30f5d05c768ee045_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/meteo/weather-history-30f5d05c768ee045.js"></head>
+  <body>
+
+
+<script type="module">import init from '/meteo/weather-history-30f5d05c768ee045.js';init('/meteo/weather-history-30f5d05c768ee045_bg.wasm');</script></body></html>
