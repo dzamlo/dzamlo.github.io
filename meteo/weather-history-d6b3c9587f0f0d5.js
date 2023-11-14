@@ -286,15 +286,15 @@ function __wbg_get_imports() {
         const ret = false;
         return ret;
     };
+    imports.wbg.__wbindgen_string_new = function(arg0, arg1) {
+        const ret = getStringFromWasm0(arg0, arg1);
+        return addHeapObject(ret);
+    };
     imports.wbg.__wbg_newPlot_f404e70f78b6c842 = function() { return handleError(function (arg0, arg1, arg2) {
         var v0 = getCachedStringFromWasm0(arg0, arg1);
         const ret = Plotly.newPlot(v0, getObject(arg2));
         return addHeapObject(ret);
     }, arguments) };
-    imports.wbg.__wbindgen_string_new = function(arg0, arg1) {
-        const ret = getStringFromWasm0(arg0, arg1);
-        return addHeapObject(ret);
-    };
     imports.wbg.__wbindgen_is_undefined = function(arg0) {
         const ret = getObject(arg0) === undefined;
         return ret;
@@ -677,24 +677,24 @@ imports.wbg.__wbindgen_debug_string = function(arg0, arg1) {
 imports.wbg.__wbindgen_throw = function(arg0, arg1) {
     throw new Error(getStringFromWasm0(arg0, arg1));
 };
-imports.wbg.__wbindgen_closure_wrapper708 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 183, __wbg_adapter_24);
+imports.wbg.__wbindgen_closure_wrapper513 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 88, __wbg_adapter_24);
     return addHeapObject(ret);
 };
-imports.wbg.__wbindgen_closure_wrapper710 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 183, __wbg_adapter_24);
+imports.wbg.__wbindgen_closure_wrapper515 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 88, __wbg_adapter_24);
     return addHeapObject(ret);
 };
-imports.wbg.__wbindgen_closure_wrapper712 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 183, __wbg_adapter_29);
+imports.wbg.__wbindgen_closure_wrapper517 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 88, __wbg_adapter_29);
     return addHeapObject(ret);
 };
-imports.wbg.__wbindgen_closure_wrapper1369 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 575, __wbg_adapter_32);
+imports.wbg.__wbindgen_closure_wrapper1397 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 589, __wbg_adapter_32);
     return addHeapObject(ret);
 };
-imports.wbg.__wbindgen_closure_wrapper1563 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 632, __wbg_adapter_35);
+imports.wbg.__wbindgen_closure_wrapper1591 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 646, __wbg_adapter_35);
     return addHeapObject(ret);
 };
 
@@ -735,7 +735,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('weather-history-30f5d05c768ee045_bg.wasm', import.meta.url);
+        input = new URL('weather-history-d6b3c9587f0f0d5_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
